@@ -1,0 +1,6 @@
+<p *ngIf="show == true">Exibindo mensagem!</p>
+<button *ngIf="!show; else hideMessage "(click)="showMessage()">Exibir mensagem!</button>
+
+<ng-template #hideMessage>
+  <button (click)="showMessage()">Esconder mensagem!</button>
+</ng-template>
