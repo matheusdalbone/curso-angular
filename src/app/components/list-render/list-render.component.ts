@@ -3,10 +3,11 @@ import { Component } from '@angular/core';
 import { Animal } from '../../interfaces/Animal';
 
 import { ListService } from '../../services/list.service';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-list-render',
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './list-render.component.html',
   styleUrl: './list-render.component.css'
 })
