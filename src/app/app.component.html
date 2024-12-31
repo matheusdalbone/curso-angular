@@ -1,9 +1,9 @@
-<h1>Descrevendo Usuarios</h1>
-<app-parent-data [user] = "user"></app-parent-data>
-<app-directives></app-directives>
-<app-if-render></app-if-render>
-<app-eventos></app-eventos>
-<app-emiter></app-emiter>
-<app-list-render></app-list-render>
-<app-pipes></app-pipes>
-<app-two-way-binding></app-two-way-binding>
+<header>
+  <p>header</p>
+  <nav>
+    <a routerLink="/list"> Lista </a>
+    <a routerLink="/number"> Numeros </a>
+    <a routerLink="/"> Home</a>
+  </nav>
+</header>
+<router-outlet></router-outlet>
